@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.practica1.elii.drapp.MainActivity">
+    tools:context="com.practica1.elii.drapp.Inicio">
 
     <TextView
         android:text="Correo"
@@ -74,28 +74,6 @@
         android:layout_alignRight="@+id/boton1"
         android:layout_alignEnd="@+id/boton1" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:ems="10"
-        android:id="@+id/txtcorreo"
-        android:layout_above="@+id/texto2"
-        android:layout_centerHorizontal="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:id="@+id/txtcontraseña"
-        style="@android:style/Widget.Material.Light.EditText"
-        android:layout_alignBottom="@+id/texto2"
-        android:layout_toRightOf="@+id/texto2"
-        android:layout_toEndOf="@+id/texto2"
-        android:layout_marginLeft="13dp"
-        android:layout_marginStart="13dp" />
-
     <TextView
         android:text="Tu salud en un click"
         android:layout_width="wrap_content"
@@ -108,4 +86,23 @@
         android:layout_alignRight="@+id/txtcontraseña"
         android:layout_alignEnd="@+id/txtcontraseña" />
 
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/txtcorreo"
+        android:layout_above="@+id/texto2"
+        android:layout_toRightOf="@+id/texto2"
+        android:layout_toEndOf="@+id/texto2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/txtcontraseña"
+        android:layout_below="@+id/txtcorreo"
+        android:layout_toRightOf="@+id/texto2"
+        android:layout_toEndOf="@+id/texto2" />
 </RelativeLayout>
