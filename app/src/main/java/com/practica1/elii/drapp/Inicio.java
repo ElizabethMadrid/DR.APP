@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 
-public class Inicio extends AppCompatActivity {
+public class Inicio extends AppCompatActivity  {
 
 
     @Override
@@ -21,15 +21,15 @@ public class Inicio extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                String usuario = ((EditText) findViewById(R.id.txtcorreo)).getText().toString();
-                String contraseña = ((EditText) findViewById(R.id.txtcontraseña)).getText().toString();
-                if (usuario.equals("elizabeth@hotmail.com") && contraseña.equals("admin")){
+                //String usuario = ((EditText) findViewById(R.id.txtcorreo)).getText().toString();
+               // String contraseña = ((EditText) findViewById(R.id.txtcontraseña)).getText().toString();
+                //if (usuario.equals("elizabeth@hotmail.com") && contraseña.equals("admin")){
                     Intent nuevoform = new Intent(Inicio.this, Menu.class);
                     startActivity(nuevoform);
-                }
-                else{
-                    Toast.makeText(getApplicationContext(), "Contraseña incorrecta", Toast.LENGTH_SHORT).show();
-                }
+               // }
+               // else{
+                //    Toast.makeText(getApplicationContext(), "Contraseña incorrecta", Toast.LENGTH_SHORT).show();
+               // }
             }
         });
 
